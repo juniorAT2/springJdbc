@@ -1,0 +1,6 @@
+2022-09-14 21:25:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PERSON" not found (this database is empty); SQL statement:
+SELECT "PERSON"."ID" AS "ID", "PERSON"."LASTNAME" AS "LASTNAME", "PERSON"."FIRSTNAME" AS "FIRSTNAME" FROM "PERSON" [42104-214]
+2022-09-14 21:25:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PERSON" not found (this database is empty); SQL statement:
+SELECT "PERSON"."ID" AS "ID", "PERSON"."LASTNAME" AS "LASTNAME", "PERSON"."FIRSTNAME" AS "FIRSTNAME" FROM "PERSON" [42104-214]
