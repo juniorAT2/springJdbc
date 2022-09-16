@@ -1,0 +1,5 @@
+1. integrare swagger
+2. provare ad utilizzare Spring 5 webClient need new spring app
+
+3.two speed architecture documentati!
+
