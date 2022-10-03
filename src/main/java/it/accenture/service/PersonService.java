@@ -6,10 +6,6 @@ import it.accenture.repository.PersonRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
-
 @Service
 public class PersonService {
     public static final String ERROR_NOT_FOUND = "L'entità %s con id %d non esiste";
@@ -25,7 +21,7 @@ public class PersonService {
     }
 
     public Person saveOrUpdate(Person p) throws EntityNotFoundException {
-        if (p.getId()!=null && !p.getId().equals(0) && !pr.existsById(p.getId())) {
+        if (p.getId()!=null && p.getId().equals(0) && !pr.existsById(p.getId())) {
             throw new EntityNotFoundException(ERROR_NOT_FOUND, Person.class, p.getId());
         }
         return pr.save(p);
